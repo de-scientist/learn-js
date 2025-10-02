@@ -272,12 +272,12 @@ function sumOfDigits (num) {
 
 
 
-//Function that determines if a number is prime it reurns true else false, print prime numbers from 1 to 1_000_000
-/*function findPrimes(start, end) {
+//Function that determines if a number is prime it returns true else false, print prime numbers from 1 to 1_000_000
+function findPrimes(start, end) {
     let primes = [];
 
     for (let i = start; i <= end; i++) {
-        if (isPrime(i)); {
+        if (isPrime(i)) {
             primes.push(i) 
         }
     }
@@ -287,7 +287,7 @@ function isPrime (num) {
     if (num <= 1) {
         return false;
     } 
-    for (let i = 2; i <= Math.sqrt(num); i++); {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) {
             return false;
         } 
@@ -296,7 +296,8 @@ function isPrime (num) {
 }
 
 
-findPrimes(1, 1000000);*/
+console.log(findPrimes(1, 1000000));
+ 
 
 //Sieve of Eratosthenes Algorithm to find all prime numbers upto a specified integer
     
