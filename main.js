@@ -179,3 +179,14 @@ function sumEvenNumbers (num) {
 }
 console.log(sumEvenNumbers(10));
 console.log(sumEvenNumbers(15));
+
+
+//Multiply by itself without using math.pow
+function powerUp (num, power) {
+    let result = 1;
+    for (let i = 1; i <= power; i++) {
+        result *= num;
+    }
+    return result;
+}
+console.log(powerUp(2,3));;
