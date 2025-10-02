@@ -31,12 +31,12 @@
 ### **Variable names naming**
 
 * **Letters- A-Z**
-* **Special characters >> \_, $**
+* **Special characters >> _, $**
 * **Numbers - 0-9 but not at the beginning** 
 * **Must not be a JS script keyword**
 * **Must not have spaces in-between**
 * **They are case sensitive**
 * **Must be a meaningful name**
 * **Use the camel-case convention - lastName >> Recommended**
-* **Use the snake-case convention - first\_name**
+* **Use the snake-case convention - first_name**
 * **Pascal-case convention - FirstName**
