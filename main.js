@@ -30,3 +30,15 @@ function convertDays (valueDays) {
     return valueDays * 24;
 }
 console.log((convertDays(14)));
+
+//Find the perimeter of a rectangle
+function perimeter (length, width) {
+    return 2 * (length + width);
+}
+console.log(perimeter(15, 25));
+
+//Fin the area of a rectangle
+function area (length, width) {
+    return length * width;
+}
+console.log(area(25, 35));
