@@ -244,5 +244,18 @@ function sumMultiples (limit, divisor) {
 }
 console.log(sumMultiples(10, 3));
 
+//Multiple sum of a range using a while loop
+function sumMultiplesWhile (limit, divisor) {
+    let sum = 0;
+    let i = 1;
+
+    while (i <= limit) {
+        if (i % divisor === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumMultiplesWhile(8, 2));
 
 
