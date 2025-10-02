@@ -233,5 +233,16 @@ console.log(factorialWhile(8));
 
 
 // Multiple sum of a range using a for loop
+function sumMultiples (limit, divisor) {
+    let sum = 0;
+    for (let i = 1; i <= limit; i++) {
+        if (i % divisor === 0) {
+            sum += i
+        } 
+    }
+    return sum;
+}
+console.log(sumMultiples(10, 3));
+
 
 
