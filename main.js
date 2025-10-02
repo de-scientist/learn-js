@@ -120,3 +120,17 @@ function bmiCalculator (weight, height) {
 console.log(bmiCalculator(65, 1.8));
 console.log(bmiCalculator(54, 1.6));
 
+
+//Greeting Based on Time
+function greetUser (username, hour) {
+    if (hour >= 5 && hour <= 11) {
+        console.log(`Good morning, ${username}`);
+    } else if (hour >= 12 && hour <= 17) {
+        console.log(`Good afternoon, ${username}`);
+    } else if (hour >= 18 && hour <= 21) {
+        console.log(`Good evening, ${username}`);
+    } else if (hour >= 22 || hour <= 4) {
+        console.log(`Good night, ${username}`);
+    }
+}
+greetUser('Mark', 10);
