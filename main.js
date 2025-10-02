@@ -189,7 +189,7 @@ function powerUp (num, power) {
     }
     return result;
 }
-console.log(powerUp(2,0));
+
 
 
 //Multiply by itself without using math.pow using a while loop
@@ -204,8 +204,7 @@ function powerUpWhile (num, power) {
     } 
     return result;
 }
-console.log(powerUpWhile(2, 3));
-console.log(powerUpWhile(3, 4));
+
 
 
 
@@ -217,7 +216,7 @@ function factorial(numb) {
     }
     return result;
 }
-console.log(factorial(6));
+
 
 
 //Factorial Calculator using a while loop
@@ -229,7 +228,7 @@ function factorialWhile (numb) {
     }
     return result;
 }
-console.log(factorialWhile(8));
+
 
 
 // Multiple sum of a range using a for loop
@@ -256,7 +255,7 @@ function sumMultiplesWhile (limit, divisor) {
     }
     return sum;
 }
-console.log(sumMultiplesWhile(8, 2));
+
 
 
 //Find sum of Digits without Converting to String or Array
@@ -270,10 +269,37 @@ function sumOfDigits (num) {
     }
     return sum;
 }
-console.log(sumOfDigits(581));
 
 
-//Functiion that determines if a number is prime
+
+//Function that determines if a number is prime it reurns true else false, print prime numbers from 1 to 1_000_000
+function findPrimes(start, end) {
+    let primes = [];
+
+    for (let i = start; i <= end; i++) {
+        if (isPrime(i)); {
+            primes.push(i) 
+        }
+    }
+    return primes;
+}
+function isPrime (num) {
+    if (num <= 1) {
+        return false;
+    } 
+    for (let i = 2; i <= Math.sqrt(num); i++); {
+        if (num % i === 0) {
+            return false;
+        } 
+    }
+    return true;
+}
+
+
+findPrimes(1, 1000000);
+
+
+    
 
 
 
