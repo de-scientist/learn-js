@@ -67,9 +67,9 @@ console.log(isPositive(50));
 //Check if I can drive
 function canIDrive (username, age) {
     if (age >= 18) {
-        return `Yes ${username}, is old enough to drive`;
+        return `Yes, ${username}, is old enough to drive`;
     } else {
-        return `No ${username}, is not old enough to drive`;
+        return `No, ${username}, is not old enough to drive`;
     }
 }
 console.log(canIDrive('Mark', 23));
@@ -88,3 +88,16 @@ function findLargest (num1, num2, num3) {
     }
 }
 console.log(findLargest(25, 35, 15));
+
+
+//Find the smallest of three numbers
+function findSmallest (num1, num2, num3) {
+    if (num1 <= num2 && num1 <= num3) {
+        return num1;
+    } else if (num2 <= num1 && num2 <= num3) {
+        return num2;
+    } else {
+        return num3
+    }
+} 
+console.log (findSmallest(25, 35, 15));
