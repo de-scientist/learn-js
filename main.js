@@ -148,5 +148,19 @@ function fizzBuzzCheck (number) {
         return String(number)
     }
 }
-console.log(fizzBuzzCheck(15));
+console.log(fizzBuzzCheck(6));;
+console.log(fizzBuzzCheck(10));
 console.log(fizzBuzzCheck(30));
+
+
+//Another Perimeter
+function perimeter2 (shape, value) {
+    if (shape === 's') {
+        return 4 * value;
+    } else if (shape === 'c') {
+        return 2 * Math.PI * value;
+    }
+}
+console.log(perimeter2('s', 5));
+console.log(perimeter2('c', 7));
+
