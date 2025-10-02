@@ -259,3 +259,21 @@ function sumMultiplesWhile (limit, divisor) {
 console.log(sumMultiplesWhile(8, 2));
 
 
+//Find sum of Digits without Converting to String or Array
+function sumOfDigits (num) {
+    let sum = 0;
+
+    while (num > 0) {
+        let digit = num % 10;
+        sum += digit;
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
+console.log(sumOfDigits(581));
+
+
+//Functiion that determines if a number is prime
+
+
+
