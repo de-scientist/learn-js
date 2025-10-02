@@ -209,5 +209,15 @@ console.log(powerUpWhile(3, 4));
 
 
 
-//Factorial Calculator
+//Factorial Calculator using a for loop
+function factorial(numb) {
+    let result = 1;
+    for (let i = 1; i <= numb; i++) {
+        result *= i
+    }
+    return result;
+}
+console.log(factorial(6));
 
+
+//Factorial Calculator using a while loop
