@@ -166,3 +166,16 @@ function perimeter2 (shape, value) {
 console.log(perimeter2('s', 5));
 console.log(perimeter2('c', 7));
 
+
+//Sum of Even Numbers
+function sumEvenNumbers (num) {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+        } 
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(10));
+console.log(sumEvenNumbers(15));
