@@ -151,6 +151,8 @@ function fizzBuzzCheck (number) {
 console.log(fizzBuzzCheck(6));;
 console.log(fizzBuzzCheck(10));
 console.log(fizzBuzzCheck(30));
+console.log(fizzBuzzCheck(31));
+
 
 
 //Another Perimeter
