@@ -315,4 +315,12 @@ function findPrimes2(toNum) {
 console.log(findPrimes2(1000000));
 
 
+// Subtraction
+function subtract(num1, num2) {
+    return num1 - num2;
+}
+console.log(subtract(50, 15));
+
+
+/
 
