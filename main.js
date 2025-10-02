@@ -273,7 +273,7 @@ function sumOfDigits (num) {
 
 
 //Function that determines if a number is prime it reurns true else false, print prime numbers from 1 to 1_000_000
-function findPrimes(start, end) {
+/*function findPrimes(start, end) {
     let primes = [];
 
     for (let i = start; i <= end; i++) {
@@ -296,10 +296,23 @@ function isPrime (num) {
 }
 
 
-findPrimes(1, 1000000);
+findPrimes(1, 1000000);*/
 
-
+//Sieve of Eratosthenes Algorithm to find all prime numbers upto a specified integer
     
+function findPrimes2(toNum) {
+    let sieve = [], i, j, primes = [];
+    for (i = 2; i <= toNum; ++i) {
+        if (!sieve[i]) {
+            primes.push(i);
+            for (j = i << 1; j <= toNum; j += i) {
+                sieve[j] = true;
+            }
+        }
+    }
+    return primes;
+}
+console.log(findPrimes2(1000000));
 
 
 
