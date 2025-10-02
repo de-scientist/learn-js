@@ -334,3 +334,27 @@ function divide(num1, num2) {
     return num1 / num2;
 }
 console.log(divide(30, 5));
+
+//Prime number check using for loop
+function isPrime3(num) {
+    let count = 0;
+    for (let i = 1; i <= num; i++) {
+        if (num % i === 0) {
+            count++;
+        }
+    }
+    if (count === 2) {
+        return true;
+ } else {
+     return false;
+ }
+}
+
+const primes = [];
+for (let i = 1; i <= 100; i++) {
+    if (isPrime3(i)) {
+        primes.push(i);
+    }
+}
+console.log(primes);
+
