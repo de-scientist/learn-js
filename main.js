@@ -221,3 +221,17 @@ console.log(factorial(6));
 
 
 //Factorial Calculator using a while loop
+function factorialWhile (numb) {
+    let result = 1;
+    let i = 1;
+    while (i <= numb) {
+        result *= 1;
+    }
+    return result;
+}
+console.log(factorialWhile(8));
+
+
+// Multiple sum of a range using a for loop
+
+
