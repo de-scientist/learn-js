@@ -322,5 +322,15 @@ function subtract(num1, num2) {
 console.log(subtract(50, 15));
 
 
-/
+// Multiplication
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+console.log(multiply(5, 6));
 
+
+// Division
+function divide(num1, num2) {
+    return num1 / num2;
+}
+console.log(divide(30, 5));
