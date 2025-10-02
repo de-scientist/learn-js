@@ -37,8 +37,29 @@ function perimeter (length, width) {
 }
 console.log(perimeter(15, 25));
 
-//Fin the area of a rectangle
+//Find the area of a rectangle
 function area (length, width) {
     return length * width;
 }
 console.log(area(25, 35));
+
+//Check if Negative
+function isNegative (number) {
+    if (number < 0)  {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isNegative(-25));
+console.log(isNegative(35));
+
+//Check if positive
+function isPositive (number) {
+    if (number > 0) {
+         return true;
+    } else {
+        return false;
+    }
+}
+console.log(isPositive(50));
