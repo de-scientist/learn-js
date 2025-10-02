@@ -181,7 +181,7 @@ console.log(sumEvenNumbers(10));
 console.log(sumEvenNumbers(15));
 
 
-//Multiply by itself without using math.pow
+//Multiply by itself without using math.pow using a for loop
 function powerUp (num, power) {
     let result = 1;
     for (let i = 1; i <= power; i++) {
@@ -189,4 +189,25 @@ function powerUp (num, power) {
     }
     return result;
 }
-console.log(powerUp(2,3));;
+console.log(powerUp(2,0));
+
+
+//Multiply by itself without using math.pow using a while loop
+
+function powerUpWhile (num, power) {
+    let result = 1;
+    let i = 1;
+
+    while (i <= power) {
+        result *= num;
+        i++;
+    } 
+    return result;
+}
+console.log(powerUpWhile(2, 3));
+console.log(powerUpWhile(3, 4));
+
+
+
+//Factorial Calculator
+
